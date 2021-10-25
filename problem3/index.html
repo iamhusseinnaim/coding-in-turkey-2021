@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title> Fridge website  </title>
+</head>
+<body>
+    
+
+    <div class="fridge">
+        <div class="fridge-brand"> fridge brand </div>
+
+        <ul class="fridge-items-container" id="fridge-items-container" >
+
+            <li class="fridge-item " id="item-1" > 
+                <span > banana   </span>
+                <span> 4 </span>
+                <button data-item="banana" data-container="item-1" data-quantity="4"  class="del-button" > delete </button>
+            </li>
+
+            <li class="fridge-item " id="item-2" > 
+                <span > tomato   </span>
+                <span> 2 </span>
+                <button  class="del-button" data-item="tomato" data-container="item-2" data-quantity="2" > delete </button>
+            </li>
+
+        </ul>
+
+
+
+    </div>
+
+
+
+    <button class="actions" id="show-add-item-form" > add item  </button>
+
+    <form action="" id="add-item-form" style="margin: 20px 0;">
+        <label for="name"> item name </label>
+        <input type="text" name="name" id="name">
+        <br>
+        <label for="quantity"> quantity </label>
+        <input type="number" name="quantity" id="quantity" >
+
+        <button type="button" id="insert-button" > insert </button>
+    </form>
+
+    <script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fridge{
+    width: 400px;
+    min-height: 300px;
+    height: auto;
+    border: 1px solid;
+    border-radius: 5px;
+    overflow: hidden; 
+    overflow-y: scroll;
+}
+
+.fridge-brand{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    justify-content: center;
+    background-color: beige;
+}
+
+li.fridge-item{
+    padding: 20px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+}
+li.fridge-item span{
+    width: calc(400px / 3);
+    text-align: center;
+}
+
+li.fridge-item button{
+    padding: 10px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+li.fridge-item span:first-child,li.fridge-item span:nth-child(2){
+    border-right: 1px solid;
+}
+
+.actions{
+    width: 400px;
+    border-radius: 5px;
+    margin: 10px 0;
+    position: relative;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: beige;
+
+}
+
+form{
+    width: 400px;
+}
+form label,form input{
+    margin: 10px 0;
+    width: 100%;
+}
